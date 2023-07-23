@@ -1,16 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@yield ('title', 'Laravel App')</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Laravel</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    @vite('resources/js/app.js')
+
 </head>
+
 <body>
-    
-    <main>
+
+    {{--Mettere un header utilizzando include--}}
+    @include('partials.header')
+
+    <main class="bg-light">
         @yield('main-content')
     </main>
 
-    @vite('resources/js/app.js')
+    {{--Mettere un footer utilizzando include--}}
+
 </body>
+
 </html>
