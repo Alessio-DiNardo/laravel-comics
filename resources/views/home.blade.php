@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('jumbo')
 <section class="jumbo">
-    
+    <a class="btn btn-primary text-uppercase my_series_btn" href="#" role="button">current series</a>   
 </section>
 @endsection
 
