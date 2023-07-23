@@ -5,7 +5,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>DC Comics</title>
+    <title>
+        @yield('title', 'DC Comics')
+    </title>
+
+
     <link rel="icon" type="image/x-icon" href="/resources/assets/img/favicon.ico">
 
     <!-- Fonts -->
@@ -18,8 +22,9 @@
 
 <body>
 
-    {{--Mettere un header utilizzando include--}}
-    @include('partials.header')
+    <header>
+        @include('partials.header')
+    </header>
 
     <main class="bg-light">
         @yield('jumbo')
@@ -27,8 +32,9 @@
         @yield('main-content')
     </main>
 
-    @include('partials.footer')
-    {{--Mettere un footer utilizzando include--}}
+    <footer>
+        @include('partials.footer')
+    </footer>
 
 </body>
 

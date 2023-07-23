@@ -1,4 +1,7 @@
 @extends('layouts.app')
+
+@section('title', 'Dc Comics | Homepage')
+
 @section('jumbo')
 <section class="jumbo">
     <a class="btn btn-primary text-uppercase my_series_btn" href="#" role="button">current series</a>   
